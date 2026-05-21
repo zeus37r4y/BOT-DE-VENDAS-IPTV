@@ -1,0 +1,31 @@
+{
+  "name": "bot-vendas-iptv",
+  "version": "1.0.0",
+  "description": "Sistema completo de vendas de assinaturas IPTV no Telegram com painel administrativo",
+  "main": "backend/server.js",
+  "scripts": {
+    "setup": "node database/setup.js",
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "bot": "node bot/bot.js"
+  },
+  "keywords": ["telegram", "bot", "vendas", "iptv", "assinatura", "pix"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.4.0",
+    "sqlite3": "^5.1.6",
+    "dotenv": "^16.0.3",
+    "node-telegram-bot-api": "^0.61.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2",
+    "uuid": "^9.0.0",
+    "qrcode": "^1.5.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
